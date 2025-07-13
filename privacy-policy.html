@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سياسة الخصوصية - مدونة شبكة الهاتف</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.8;
+        color: #333;
+        background-color: #f8fafc;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header Styles */
+      .header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #e2e8f0;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .logo-icon {
+        width: 32px;
+        height: 32px;
+        background: #2563eb;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 0.875rem;
+      }
+
+      .logo-text {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #1f2937;
+      }
+
+      .nav {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #6b7280;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: #2563eb;
+      }
+
+      .btn {
+        padding: 0.5rem 1rem;
+        border: 1px solid #d1d5db;
+        background: white;
+        color: #374151;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 0.875rem;
+        transition: all 0.3s;
+      }
+
+      .btn:hover {
+        background: #f9fafb;
+      }
+
+      /* Main Content */
+      .main-content {
+        background: white;
+        margin: 2rem 0;
+        padding: 3rem;
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .page-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #1f2937;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .last-updated {
+        text-align: center;
+        color: #6b7280;
+        margin-bottom: 3rem;
+        font-size: 0.875rem;
+      }
+
+      .section {
+        margin-bottom: 2.5rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #1f2937;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #10b981;
+        padding-bottom: 0.5rem;
+      }
+
+      .subsection-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #374151;
+        margin: 1.5rem 0 1rem;
+      }
+
+      .content-text {
+        margin-bottom: 1rem;
+        text-align: justify;
+      }
+
+      .content-list {
+        margin: 1rem 0;
+        padding-right: 2rem;
+      }
+
+      .content-list li {
+        margin-bottom: 0.5rem;
+      }
+
+      .highlight-box {
+        background: #f0fdf4;
+        border: 1px solid #10b981;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .warning-box {
+        background: #fef3c7;
+        border: 1px solid #f59e0b;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .contact-info {
+        background: #f8fafc;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .data-table th,
+      .data-table td {
+        padding: 1rem;
+        text-align: right;
+        border-bottom: 1px solid #e5e7eb;
+      }
+
+      .data-table th {
+        background: #f9fafb;
+        font-weight: 600;
+        color: #374151;
+      }
+
+      /* Footer */
+      .footer {
+        background: #1f2937;
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+      }
+
+      .footer p {
+        color: #9ca3af;
+        font-size: 0.875rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .nav {
+          display: none;
+        }
+
+        .main-content {
+          padding: 2rem 1rem;
+          margin: 1rem 0;
+        }
+
+        .page-title {
+          font-size: 2rem;
+        }
+
+        .data-table {
+          font-size: 0.875rem;
+        }
+
+        .data-table th,
+        .data-table td {
+          padding: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">4G</div>
+          <h1 class="logo-text">مدونة شبكة الهاتف</h1>
+        </div>
+        <nav class="nav">
+          <a href="index.html">الرئيسية</a>
+          <a href="#">المقالات</a>
+          <a href="#">التصنيفات</a>
+          <a href="#">من نحن</a>
+          <a href="#">اتصل بنا</a>
+        </nav>
+        <a href="#" class="btn">اشترك في النشرة</a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <div class="main-content">
+        <h1 class="page-title">سياسة الخصوصية</h1>
+        <p class="last-updated">آخر تحديث: 15 يناير 2024</p>
+
+        <div class="highlight-box">
+          <p>
+            <strong
+              >نحن في "مدونة شبكة الهاتف" نقدر خصوصيتك ونلتزم بحماية بياناتك
+              الشخصية.</strong
+            >
+            هذه السياسة توضح كيفية جمع واستخدام وحماية معلوماتك عند استخدام
+            موقعنا.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">1. المعلومات التي نجمعها</h2>
+
+          <h3 class="subsection-title">1.1 المعلومات الشخصية</h3>
+          <p class="content-text">
+            نجمع المعلومات التالية عندما تقدمها طوعياً:
+          </p>
+          <ul class="content-list">
+            <li>الاسم الكامل</li>
+            <li>عنوان البريد الإلكتروني</li>
+            <li>رقم الهاتف (اختياري)</li>
+            <li>التعليقات والمشاركات</li>
+            <li>تف��يلات الاشتراك في النشرة</li>
+          </ul>
+
+          <h3 class="subsection-title">1.2 المعلومات التقنية</h3>
+          <p class="content-text">
+            نجمع تلقائياً معلومات تقنية عند زيارة الموقع:
+          </p>
+          <ul class="content-list">
+            <li>عنوان IP الخاص بك</li>
+            <li>نوع المتصفح والجهاز</li>
+            <li>نظام التشغيل</li>
+            <li>الصفحات التي تزورها</li>
+            <li>وقت ومدة الزيارة</li>
+            <li>الموقع المرجعي</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">2. كيفية استخدام المعلومات</h2>
+          <p class="content-text">نستخدم المعلومات المجمعة للأغراض التالية:</p>
+
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>الغرض</th>
+                <th>نوع البيانات</th>
+                <th>الأساس القانوني</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>تقديم المحتوى والخدمات</td>
+                <td>معلومات التصفح</td>
+                <td>المصلحة المشروعة</td>
+              </tr>
+              <tr>
+                <td>إرسال النشرة الإخبارية</td>
+                <td>البريد الإلكتروني</td>
+                <td>الموافقة</td>
+              </tr>
+              <tr>
+                <td>الرد على الاستفسارات</td>
+                <td>معلومات الاتصال</td>
+                <td>المصلحة المشروعة</td>
+              </tr>
+              <tr>
+                <td>تحسين الموقع</td>
+                <td>بيانات التحليل</td>
+                <td>المصلحة المشروعة</td>
+              </tr>
+              <tr>
+                <td>الامتثال القانوني</td>
+                <td>جميع البيانات</td>
+                <td>الالتزام القانوني</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">3. مشاركة المعلومات</h2>
+          <p class="content-text">
+            نحن لا نبيع أو نؤجر أو نتاجر بمعلوماتك الشخصية. قد نشارك معلوماتك في
+            الحالات التالية فقط:
+          </p>
+
+          <h3 class="subsection-title">3.1 مقدمو الخدمات</h3>
+          <ul class="content-list">
+            <li>خدمات الاستضافة والخوادم</li>
+            <li>خدمات التحليل (Google Analytics)</li>
+            <li>خدمات البريد الإلكتروني</li>
+            <li>خدمات الأمان والحماية</li>
+          </ul>
+
+          <h3 class="subsection-title">3.2 المتطلبات القانونية</h3>
+          <p class="content-text">
+            قد نكشف عن معلوماتك إذا كان ذلك مطلوباً بموجب القانون أو لحماية
+            حقوقنا أو حقوق الآخرين.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">4. ملفات تعريف الارتباط (Cookies)</h2>
+
+          <h3 class="subsection-title">4.1 أنواع ملفات تعريف الارتباط</h3>
+          <p class="content-text">
+            نستخدم الأنواع التالية من ملفات تعريف الارتباط:
+          </p>
+          <ul class="content-list">
+            <li>
+              <strong>ملفات ضرورية:</strong> مطلوبة لتشغيل الموقع بشكل صحيح
+            </li>
+            <li><strong>ملفات التحليل:</strong> لفهم كيفية استخدام الموقع</li>
+            <li><strong>ملفات الوظائف:</strong> لحفظ تفضيلاتك</li>
+            <li><strong>ملفات التسويق:</strong> لعرض محتوى مخصص (بموافقتك)</li>
+          </ul>
+
+          <h3 class="subsection-title">4.2 إدارة ملفات تعريف الارتباط</h3>
+          <p class="content-text">
+            يمكنك التحكم في ملفات تعريف الارتباط من خلال إعدادات متصفحك. لكن
+            تعطيل بعضها قد يؤثر على وظائف الموقع.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">5. أمان البيانات</h2>
+          <p class="content-text">نتخذ تدابير أمنية متقدمة لحماية معلوماتك:</p>
+          <ul class="content-list">
+            <li>تشفير SSL/TLS لجميع البيانات المنقولة</li>
+            <li>خوادم آمنة ومحمية بكلمات مرور قوية</li>
+            <li>تحديثات أمنية منتظمة</li>
+            <li>مراقبة مستمرة للأنشطة المشبوهة</li>
+            <li>نسخ احتياطية منتظمة للبيانات</li>
+            <li>وصول محدود للموظفين المخولين فقط</li>
+          </ul>
+
+          <div class="warning-box">
+            <p>
+              <strong>تنبيه:</strong> رغم اتخاذنا لجميع التدابير الأمنية، لا
+              يمكن ضمان الأمان المطلق للبيانات المنقولة عبر الإنترنت. نحن نشجعك
+              على اتخاذ احتياطاتك الخاصة.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">6. حقوقك في البيانات</h2>
+          <p class="content-text">
+            لديك الحقوق التالية فيما يتعلق ببياناتك الشخصية:
+          </p>
+
+          <h3 class="subsection-title">6.1 حق الوصول</h3>
+          <p class="content-text">
+            يمكنك طلب نسخة من جميع البيانات الشخصية التي نحتفظ بها عنك.
+          </p>
+
+          <h3 class="subsection-title">6.2 حق التصحيح</h3>
+          <p class="content-text">
+            يمكنك طلب تصحيح أي معلومات غير دقيقة أو غير مكتملة.
+          </p>
+
+          <h3 class="subsection-title">6.3 حق الحذف</h3>
+          <p class="content-text">
+            يمكنك طلب حذف بياناتك الشخصية في ظروف معينة.
+          </p>
+
+          <h3 class="subsection-title">6.4 حق النقل</h3>
+          <p class="content-text">
+            يمكنك طلب نقل بياناتك إلى خدمة أخرى بتنسيق قابل للقراءة آلياً.
+          </p>
+
+          <h3 class="subsection-title">6.5 حق الاعتراض</h3>
+          <p class="content-text">
+            يمكنك الاعتراض على معالجة بياناتك لأغراض التسويق المباشر.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">7. الاحتفاظ بالبيانات</h2>
+          <p class="content-text">نحتفظ ببياناتك الشخصية للفترات التالية:</p>
+          <ul class="content-list">
+            <li><strong>بيانات الحساب:</strong> طالما كان حسابك نشطاً</li>
+            <li><strong>التعليقات:</strong> طالما كان المحتوى منشوراً</li>
+            <li><strong>النشرة الإخبارية:</strong> حتى إلغاء الاشتراك</li>
+            <li><strong>بيانات التحليل:</strong> 26 شهراً كحد أقصى</li>
+            <li><strong>السجلات القانونية:</strong> حسب المتطلبات القانونية</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">8. نقل البيانات الدولي</h2>
+          <p class="content-text">
+            قد يتم نقل بياناتك ومعالجتها في دول أخرى حيث توجد خوادمنا أو مقدمو
+            خدماتنا. نضمن أن أي نقل للبيانات يتم وفقاً للمعايير القانونية
+            المطلوبة وبضمانات كافية لحماية خصوصيتك.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">9. خصوصية الأطفال</h2>
+          <p class="content-text">
+            موقعنا غير مخصص للأطفال دون سن 13 عاماً. نحن لا نجمع عمداً معلومات
+            شخصية من الأطفال. إذا علمنا أننا جمعنا معلومات من طفل دون سن 13،
+            سنحذف هذه المعلومات فوراً.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">10. التحديثات على السياسة</h2>
+          <p class="content-text">
+            قد نحدث سياسة الخصوصية هذه من وقت لآخر. سنخطرك بأي تغييرات جوهرية
+            عبر:
+          </p>
+          <ul class="content-list">
+            <li>إشعار بارز على الموقع</li>
+            <li>رسالة بريد إلكتروني (إذا كنت مشتركاً)</li>
+            <li>تحديث تاريخ "آخر تحديث" أعلى هذه الصفحة</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">11. الخدمات الخارجية</h2>
+
+          <h3 class="subsection-title">11.1 Google Analytics</h3>
+          <p class="content-text">
+            نستخدم Google Analytics لتحليل استخدام الموقع. يمكنك إلغاء الاشتراك
+            من خلال إضافة متصفح Google Analytics Opt-out.
+          </p>
+
+          <h3 class="subsection-title">11.2 خدمات التواصل الاجتماعي</h3>
+          <p class="content-text">
+            قد تحتوي صفحاتنا على أزرار مشاركة لمواقع التواصل الاجتماعي. هذه
+            الخدمات لها سياسات خصوصية منفصلة.
+          </p>
+        </div>
+
+        <div class="contact-info">
+          <h2 class="section-title">التواصل معنا</h2>
+          <p class="content-text">
+            إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه أو تريد ممارسة حقوقك في
+            البيانات، يرجى التواصل معنا:
+          </p>
+          <ul class="content-list">
+            <li>
+              <strong>مسؤول حماية البيانات:</strong> privacy@phonenetwork.com
+            </li>
+            <li>
+              <strong>البريد الإلكتروني العام:</strong> info@phonenetwork.com
+            </li>
+            <li><strong>الهاتف:</strong> +966 12 345 6789</li>
+            <li><strong>العنوان:</strong> الرياض، المملكة العربية السعودية</li>
+            <li>
+              <strong>ساعات العمل:</strong> الأحد - الخميس، 9:00 ص - 5:00 م
+            </li>
+          </ul>
+
+          <div class="warning-box">
+            <p>
+              <strong>ملاحظة مهمة:</strong> سنرد على جميع طلبات البيانات خلال 30
+              يوماً من تاريخ الاستلام. قد نطلب التحقق من هويتك قبل معالجة طلبك.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 مدونة شبكة الهاتف. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+  </body>
+</html>

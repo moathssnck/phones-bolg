@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الشروط والأحكام - مدونة شبكة الهاتف</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.8;
+        color: #333;
+        background-color: #f8fafc;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header Styles */
+      .header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid #e2e8f0;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .logo-icon {
+        width: 32px;
+        height: 32px;
+        background: #2563eb;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 0.875rem;
+      }
+
+      .logo-text {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #1f2937;
+      }
+
+      .nav {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: #6b7280;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .nav a:hover {
+        color: #2563eb;
+      }
+
+      .btn {
+        padding: 0.5rem 1rem;
+        border: 1px solid #d1d5db;
+        background: white;
+        color: #374151;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 0.875rem;
+        transition: all 0.3s;
+      }
+
+      .btn:hover {
+        background: #f9fafb;
+      }
+
+      /* Main Content */
+      .main-content {
+        background: white;
+        margin: 2rem 0;
+        padding: 3rem;
+        border-radius: 12px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .page-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #1f2937;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      .last-updated {
+        text-align: center;
+        color: #6b7280;
+        margin-bottom: 3rem;
+        font-size: 0.875rem;
+      }
+
+      .section {
+        margin-bottom: 2.5rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #1f2937;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #2563eb;
+        padding-bottom: 0.5rem;
+      }
+
+      .subsection-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #374151;
+        margin: 1.5rem 0 1rem;
+      }
+
+      .content-text {
+        margin-bottom: 1rem;
+        text-align: justify;
+      }
+
+      .content-list {
+        margin: 1rem 0;
+        padding-right: 2rem;
+      }
+
+      .content-list li {
+        margin-bottom: 0.5rem;
+      }
+
+      .highlight-box {
+        background: #f0f9ff;
+        border: 1px solid #0ea5e9;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+      }
+
+      .contact-info {
+        background: #f8fafc;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      /* Footer */
+      .footer {
+        background: #1f2937;
+        color: white;
+        padding: 2rem 0;
+        text-align: center;
+      }
+
+      .footer p {
+        color: #9ca3af;
+        font-size: 0.875rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .nav {
+          display: none;
+        }
+
+        .main-content {
+          padding: 2rem 1rem;
+          margin: 1rem 0;
+        }
+
+        .page-title {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">4G</div>
+          <h1 class="logo-text">مدونة شبكة الهاتف</h1>
+        </div>
+        <nav class="nav">
+          <a href="index.html">الرئيسية</a>
+          <a href="#">المقالات</a>
+          <a href="#">التصنيفات</a>
+          <a href="#">من نحن</a>
+          <a href="#">اتصل بنا</a>
+        </nav>
+        <a href="#" class="btn">اشترك في النشرة</a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+      <div class="main-content">
+        <h1 class="page-title">الشروط والأحكام</h1>
+        <p class="last-updated">آخر تحديث: 15 يناير 2024</p>
+
+        <div class="highlight-box">
+          <p>
+            <strong>مرحباً بك في مدونة شبكة الهاتف.</strong> باستخدامك لموقعنا،
+            فإنك توافق على الالتزام بهذه الشروط والأحكام. يرجى قراءتها بعناية
+            قبل استخدام خدماتنا.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">1. قبول الشروط</h2>
+          <p class="content-text">
+            بدخولك واستخدامك لموقع "مدونة شبكة الهاتف"، فإنك تقر بأنك قد قرأت
+            وفهمت ووافقت على الالتزام بجميع الشروط والأحكام المذكورة في هذه
+            الصفحة. إذا كنت لا توافق على أي من هذه الشروط، يرجى عدم استخدام
+            الموقع.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">2. استخدام الموقع</h2>
+
+          <h3 class="subsection-title">2.1 الاستخدام المسموح</h3>
+          <p class="content-text">يُسمح لك باستخدام الموقع للأغراض التالية:</p>
+          <ul class="content-list">
+            <li>قراءة المقالات والمحتوى التعليمي</li>
+            <li>التعليق على المقالات بطريقة محترمة</li>
+            <li>مشاركة المحتوى مع الإشارة للمصدر</li>
+            <li>الاشتراك في النشرة الإخبارية</li>
+          </ul>
+
+          <h3 class="subsection-title">2.2 الاستخدام المحظور</h3>
+          <p class="content-text">يُحظر عليك القيام بالأنشطة التالية:</p>
+          <ul class="content-list">
+            <li>نسخ أو إعادة نشر المحتوى دون إذن مكتوب</li>
+            <li>استخدام الموقع لأغراض تجارية دون موافقة</li>
+            <li>نشر محتوى مسيء أو غير قانوني</li>
+            <li>محاولة اختراق أو إلحاق الضرر بالموقع</li>
+            <li>انتحال شخصية الآخرين</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">3. حقوق الملكية الفكرية</h2>
+          <p class="content-text">
+            جميع المحتويات المنشورة على موقع "مدونة شبكة الهاتف" بما في ذلك
+            النصوص والصور والرسوم والتصاميم والشعارات محمية بموجب قوانين حقوق
+            الطبع والنشر والملكية الفكرية. لا يجوز استخدام أي من هذه المحتويات
+            دون الحصول على إذن مكتوب مسبق من إدارة الموقع.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">4. المحتوى المقدم من المستخدمين</h2>
+
+          <h3 class="subsection-title">4.1 التعليقات والمشاركات</h3>
+          <p class="content-text">
+            عند تقديم تعليقات أو مشاركات على الموقع، فإنك تمنح "مدونة شبكة
+            الهاتف" حقاً غير حصري لاستخدام وعرض ونشر هذا المحتوى. كما تتعهد بأن
+            المحتوى المقدم:
+          </p>
+          <ul class="content-list">
+            <li>لا يخالف القوانين المعمول بها</li>
+            <li>لا يحتوي على مواد مسيئة أو تشهيرية</li>
+            <li>لا ينتهك حقوق الآخرين</li>
+            <li>دقيق وصحيح حسب علمك</li>
+          </ul>
+
+          <h3 class="subsection-title">4.2 المسؤولية</h3>
+          <p class="content-text">
+            أنت مسؤول بالكامل عن أي محتوى تقدمه، ونحتفظ بالحق في حذف أو تعديل أي
+            محتوى نراه غير مناسب دون إشعار مسبق.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">5. إخلاء المسؤولية</h2>
+          <p class="content-text">
+            المعلومات المقدمة على موقع "مدونة شبكة الهاتف" هي لأغراض تعليمية
+            وإعلامية فقط. نحن نبذل قصارى جهدنا لضمان دقة المعلومات، لكننا لا
+            نضمن:
+          </p>
+          <ul class="content-list">
+            <li>دقة أو اكتمال المعلومات المقدمة</li>
+            <li>ملاءمة المعلومات لاحتياجاتك الخاصة</li>
+            <li>عدم انقطاع الخدمة أو خلوها من الأخطاء</li>
+            <li>أمان البيانات المرسلة عبر الإنترنت</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">6. حدود المسؤولية</h2>
+          <p class="content-text">
+            لن تكون "مدونة شبكة الهاتف" أو القائمون عليها مسؤولين عن أي أضرار
+            مباشرة أو غير مباشرة قد تنتج عن:
+          </p>
+          <ul class="content-list">
+            <li>استخدام أو عدم القدرة على استخدام الموقع</li>
+            <li>الاعتماد على المعلومات المقدمة</li>
+            <li>انقطاع الخدمة أو الأخطاء التقنية</li>
+            <li>فقدان البيانات أو الأرباح</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">7. الروابط الخارجية</h2>
+          <p class="content-text">
+            قد يحتوي موقعنا على روابط لمواقع خارجية. نحن لسنا مسؤولين عن محتوى
+            أو سياسات الخصوصية لهذه المواقع. ننصحك بمراجعة شروط وأحكام أي موقع
+            تزوره.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">8. التعديلات على الشروط</h2>
+          <p class="content-text">
+            نحتفظ بالحق في تعديل هذه الشروط والأحكام في أي وقت دون إشعار مسبق.
+            التعديلات ستصبح سارية المفعول فور نشرها على الموقع. استمرارك في
+            استخدام الموقع بعد التعديلات يعني موافقتك على الشروط الجديدة.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">9. إنهاء الخدمة</h2>
+          <p class="content-text">
+            نحتفظ بالحق في إنهاء أو تعليق وصولك للموقع في أي وقت، دون إشعار
+            مسبق، في حالة انتهاكك لهذه الشروط والأحكام أو لأي سبب آخر نراه
+            مناسباً.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">10. القانون المطبق</h2>
+          <p class="content-text">
+            تخضع هذه الشروط والأحكام لقوانين المملكة العربية السعودية. أي نزاع
+            ينشأ عن استخدام الموقع سيتم حله وفقاً للقوانين السعودية والمحاكم
+            المختصة في المملكة.
+          </p>
+        </div>
+
+        <div class="contact-info">
+          <h2 class="section-title">معلومات الاتصال</h2>
+          <p class="content-text">
+            إذا كان لديك أي استفسارات حول هذه الشروط والأحكام، يرجى التواصل
+            معنا:
+          </p>
+          <ul class="content-list">
+            <li><strong>البريد الإلكتروني:</strong> legal@phonenetwork.com</li>
+            <li><strong>الهاتف:</strong> +966 12 345 6789</li>
+            <li><strong>العنوان:</strong> الرياض، المملكة العربية السعودية</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 مدونة شبكة الهاتف. جميع الحقوق محفوظة.</p>
+      </div>
+    </footer>
+  </body>
+</html>
